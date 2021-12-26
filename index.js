@@ -9,13 +9,11 @@ function addBinary(a, b) {
     ost = sum % 2;
     binary.push(ost);
     neOst = Math.floor(sum / 2);
-    console.log(neOst);
     sum = neOst;
     if (sum == 1) {
       binary.push(sum);
     }
   } while (sum > 1);
-  console.log(binary);
   binary.reverse();
   
   for (let i = 0; i < binary.length; i++) {
